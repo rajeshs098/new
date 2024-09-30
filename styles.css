@@ -1,8 +1,8 @@
 :root {
     --primary-color: #1c1c3b;
     --secondary-color: #8cc63f;
-    --background-color: #f5e6d3;
-    --text-color: #333;
+    --background-color: #0A0A0B;
+    --text-color: #977656;
     --white: #fff;
 }
 
@@ -65,11 +65,39 @@ main {
     margin: 0 auto;
     padding: 2rem 1rem;
 }
-
 .hero {
-    text-align: center;
-    margin-bottom: 2rem;
+    background-image: url('images/bg1.png');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%;
+    height: 100vh; /* Adjusts the section height to fill the viewport */
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: auto; /* Adjusts the height for smaller screens */
+        padding: 50px 20px; /* Adds padding to ensure content is readable */
+    }
+}
+
+
+.hero h1 {
+    font-size: 3rem; /* Adjust the size of the header */
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
 
 .professional-tag {
     background-color: var(--secondary-color);
